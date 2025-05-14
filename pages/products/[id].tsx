@@ -4,13 +4,12 @@ export default function ProductDetail() {
   const router = useRouter();
   const { id } = router.query;
 
-  // 예시용 더미 데이터
   const product = {
     id,
     name: 'Heart Drop Earrings',
     description: 'Elegant heart-shaped earrings with cubic zirconia.',
     price: 19.99,
-    image: '/images/sample-earring.jpg', // public/images 폴더에 파일 존재해야 함
+    image: '/images/sample-earring.jpg',
   };
 
   return (
